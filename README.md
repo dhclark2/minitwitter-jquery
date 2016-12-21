@@ -1,7 +1,7 @@
 # README
 
 - Use jQuery to hide your heart/retweet/etc links on page load (document ready)
-- Add a bootstrap btn (maybe btn-primary or other bootstrap style) to each tweet that says "Show Links" (or other text or an icon)
+X Add a bootstrap btn (maybe btn-primary or other bootstrap style) to each tweet that says "Show Links" (or other text or an icon)
 - When clicked it will toggle the visibility of hearts/retweets/etc links
 
 
