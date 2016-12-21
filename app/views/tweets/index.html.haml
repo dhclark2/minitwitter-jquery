@@ -13,7 +13,11 @@
           %i.fa.fa-star-o{"aria-hidden" => "true"}
           OR
           %i.fa.fa-star{"aria-hidden" => "true", style: 'color:#f0C300'}
-        %th Tweet
+        %th
+          %span.pull-right.btn.btn-primary.toggle-images
+            Toggle Links
+          Tweet
+
         %th Poster
         %th Posted
         %th{:colspan => 3} Options
@@ -36,11 +40,14 @@
             %p
               = link_to tweet.tweet, tweet.link
 
-              %em
+              %em.truncated-link
                 (
                 = truncate(tweet.link, length: 25)
                 )
-
+              %em.full-link
+                (
+                = tweet.link
+                )
           %td= link_to tweet.user_name
           %td= tweet.created_at
 
